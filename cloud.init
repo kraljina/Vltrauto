@@ -1,0 +1,11 @@
+#!/bin/bash
+
+uname -a
+apt-get -y update
+apt-get -y install python2.7
+apt-get -y install python2.7-minimal
+debconf-set-selections <<< "postfix postfix/mailname string ' + hostname + '"
+debconf-set-selections <<< "postfix postfix/main_mailer_type string \'Internet Site\'"
+apt-get install -y postfix &
+
+echo "Leave me here" >> Installed

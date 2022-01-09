@@ -1,0 +1,15 @@
+{
+  "INSTANCE_PER_TOKEN": 1,
+  "Tokens": [
+    "KYC7SC33CUHJGFOJ6ZKQV6IOVM3Y4B4AWVKQ"
+  ],
+  "Domains": "domains.txt",
+  "RSA_public_Path": "key.pub",
+  "INSTANCE_Config": {
+    "OSID": 387,
+    "VPSPLANID": 201,
+    "region": "random",
+    "Stack_script": "cloud.init"
+  },
+  "SAVE_IP_TO_FILE": "IPs.txt"
+}
